@@ -1,60 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ayush Goyal | Performance Marketing</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Ayush Goyal | Digital Growth Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<header class="fade-in">
-  <h1>Ayush Goyal</h1>
-  <p class="tagline">
-    Performance Marketing · Growth Systems · Ads Engineering
+<!-- INTRO -->
+<section id="intro">
+  <h1 class="glow">Ayush Goyal</h1>
+  <p class="subtitle slide-in">
+    Digital Marketing • Growth • Data • Ads
   </p>
-</header>
 
-<section class="fade-in">
-  <h2 class="section-title">About</h2>
-  <p>
-    I design and scale performance marketing systems using
-    paid ads, analytics, funnels, and automation.
-  </p>
-</section>
-
-<section class="fade-in">
-  <h2 class="section-title">Skills Stack</h2>
-  <div class="skills">
-    <span>Meta Ads</span>
-    <span>Google Ads</span>
-    <span>Analytics</span>
-    <span>Funnels</span>
-    <span>Tracking</span>
-    <span>Growth Strategy</span>
+  <div class="nav-buttons">
+    <button onclick="openSection('skills')">Skills</button>
+    <button onclick="openSection('expertise')">Expertise</button>
+    <button onclick="openSection('experience')">Experience</button>
   </div>
 </section>
 
-<section class="fade-in">
-  <h2 class="section-title">Case Studies</h2>
-  <div class="card">
-    <strong>Market Dojo</strong>
-    <p style="color:#94a3b8;font-size:14px;">
-      Lead generation funnels, disciplined trading education marketing,
-      ROI-focused ad campaigns.
+<!-- CONTENT -->
+<section id="content">
+
+  <!-- SKILLS -->
+  <div id="skills" class="panel">
+    <h2>Skills</h2>
+    <p class="slide-text">
+      SEO · Meta Ads · Google Ads · Data Analysis · Funnels · Email Marketing
+    </p>
+
+    <div class="logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Google_Ads_logo.svg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Meta_Logo.png">
+    </div>
+  </div>
+
+  <!-- EXPERTISE -->
+  <div id="expertise" class="panel">
+    <h2>Expertise</h2>
+    <p class="slide-text">
+      Data-driven growth systems, campaign optimization, lead quality analysis,
+      performance dashboards, and scalable digital strategies.
     </p>
   </div>
-</section>
 
-<section class="fade-in">
-  <h2 class="section-title">GitHub Projects</h2>
-  <div id="github-projects" style="display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));"></div>
-</section>
+  <!-- EXPERIENCE -->
+  <div id="experience" class="panel">
+    <h2>Experience</h2>
 
-<footer>
-  © 2026 Ayush Goyal · Built with GitHub Pages
-</footer>
+    <div class="exp-card">
+      <h3>Kiyash Healthcare</h3>
+      <span>Digital Marketing Specialist</span>
+      <p>
+        Sales & lead data analysis, campaign performance tracking,
+        product listings optimization, and process improvements.
+      </p>
+    </div>
+
+    <div class="exp-card">
+      <h3>Adworth</h3>
+      <span>Data Analytics Specialist</span>
+      <p>
+        Dashboards, lead metrics, campaign insights,
+        data cleaning & reporting.
+      </p>
+    </div>
+
+    <div class="exp-card">
+      <h3>Agile Capital Ltd</h3>
+      <span>Digital Marketing Intern</span>
+      <p>
+        Market research, ₹2L sales contribution,
+        SEO and team coordination.
+      </p>
+    </div>
+
+    <div class="exp-card">
+      <h3>Brand Pixcel</h3>
+      <span>Digital Marketing Manager</span>
+      <p>
+        Social media ads, daily campaigns,
+        GMB and SEO management.
+      </p>
+    </div>
+  </div>
+
+</section>
 
 <script src="script.js"></script>
 </body>
