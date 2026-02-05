@@ -1,76 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-
 body {
   margin: 0;
-  background: #020617;
+  font-family: 'Orbitron', sans-serif;
+  background: #0a0f1e;
   color: #e5e7eb;
-  font-family: 'Orbitron', monospace;
+  scroll-behavior: smooth;
 }
 
-#intro {
+/* HERO */
+#hero {
   height: 100vh;
+  background: linear-gradient(135deg, #000, #041627);
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding: 60px;
+  align-items: center;
+  text-align: center;
 }
 
-.glow {
-  font-size: 56px;
+.neon-text {
+  font-size: 60px;
   color: #22c55e;
-  text-shadow: 0 0 20px #22c55e;
+  text-shadow: 0px 0px 12px #22c55e, 0px 0px 30px #0fcf9c;
 }
 
-.subtitle {
+.tagline {
   color: #94a3b8;
-  margin: 20px 0;
+  margin-top: 8px;
+  font-size: 18px;
 }
 
-.nav-buttons button {
+.buttons button {
+  margin: 12px;
+  padding: 14px 28px;
   background: transparent;
-  border: 1px solid #22c55e;
+  border: 2px solid #22c55e;
   color: #22c55e;
-  padding: 12px 24px;
-  margin-right: 12px;
+  font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.nav-buttons button:hover {
+.buttons button:hover {
   background: #22c55e;
   color: #000;
   transform: scale(1.1);
 }
 
-#content {
-  padding: 80px;
-}
-
+/* PANELS */
 .panel {
-  display: none;
-  margin-bottom: 100px;
+  padding: 60px 40px;
+  border-bottom: 1px solid #112138;
 }
 
-.panel h2 {
+h2 {
   color: #22c55e;
+  margin-bottom: 20px;
 }
 
-.slide-text {
-  animation: slide 1s ease forwards;
+/* SLIDE IN */
+.slide-in {
+  animation: fadeSlide 0.8s ease-out forwards;
+  opacity: 0;
 }
 
-@keyframes slide {
-  from { transform: translateX(-200px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateX(-80px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.skills-grid span {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 18px;
+  border: 1px solid #1e293b;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.skills-grid span:hover {
+  background: #22c55e;
+  color: #000;
 }
 
 .exp-card {
   border-left: 3px solid #22c55e;
-  padding: 20px;
-  margin: 30px 0;
+  padding: 16px;
+  margin: 20px 0;
 }
 
-.logos img {
-  height: 40px;
-  margin-right: 20px;
+/* Project Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 24px;
+  color: #64748b;
 }
