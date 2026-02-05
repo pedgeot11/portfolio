@@ -24,3 +24,9 @@ fetch('https://api.github.com/users/pedgeot11/repos')
       container.appendChild(div);
     });
   });
+function openSection(id) {
+  document.querySelectorAll('.panel').forEach(p => p.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+  document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+}
+
