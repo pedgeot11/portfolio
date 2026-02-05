@@ -4,96 +4,58 @@
   <meta charset="UTF-8">
   <title>Ayush Goyal | Performance Marketing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: monospace;
-      background: radial-gradient(circle at top, #0f172a, #020617);
-      color: #e5e7eb;
-    }
-
-    header {
-      padding: 40px;
-      border-bottom: 1px solid #1e293b;
-    }
-
-    h1 {
-      color: #22c55e;
-      margin: 0;
-      font-size: 42px;
-    }
-
-    .tagline {
-      color: #94a3b8;
-      margin-top: 8px;
-    }
-
-    section {
-      padding: 60px 40px;
-      border-bottom: 1px solid #020617;
-    }
-
-    .section-title {
-      color: #22c55e;
-      margin-bottom: 20px;
-      font-size: 22px;
-    }
-
-    .skills span {
-      display: inline-block;
-      border: 1px solid #1e293b;
-      padding: 8px 14px;
-      margin: 6px;
-      border-radius: 4px;
-      font-size: 14px;
-    }
-
-    footer {
-      padding: 30px;
-      text-align: center;
-      color: #64748b;
-      font-size: 14px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<header class="fade-in">
   <h1>Ayush Goyal</h1>
-  <p class="tagline">Performance Marketing | Growth | Ads</p>
+  <p class="tagline">
+    Performance Marketing · Growth Systems · Ads Engineering
+  </p>
 </header>
 
-<section>
-  <h2 class="section-title">About Me</h2>
+<section class="fade-in">
+  <h2 class="section-title">About</h2>
   <p>
-    I build data-driven performance marketing systems focused on
-    leads, ROI, and scalable growth using paid ads and analytics.
+    I design and scale performance marketing systems using
+    paid ads, analytics, funnels, and automation.
   </p>
 </section>
 
-<section>
+<section class="fade-in">
   <h2 class="section-title">Skills Stack</h2>
   <div class="skills">
     <span>Meta Ads</span>
     <span>Google Ads</span>
-    <span>Funnel Building</span>
     <span>Analytics</span>
-    <span>Conversion Tracking</span>
-    <span>Performance Strategy</span>
+    <span>Funnels</span>
+    <span>Tracking</span>
+    <span>Growth Strategy</span>
   </div>
 </section>
 
-<section>
-  <h2 class="section-title">Projects</h2>
-  <p>Live performance campaigns & case studies coming soon.</p>
+<section class="fade-in">
+  <h2 class="section-title">Case Studies</h2>
+  <div class="card">
+    <strong>Market Dojo</strong>
+    <p style="color:#94a3b8;font-size:14px;">
+      Lead generation funnels, disciplined trading education marketing,
+      ROI-focused ad campaigns.
+    </p>
+  </div>
+</section>
+
+<section class="fade-in">
+  <h2 class="section-title">GitHub Projects</h2>
+  <div id="github-projects" style="display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));"></div>
 </section>
 
 <footer>
   © 2026 Ayush Goyal · Built with GitHub Pages
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
-
