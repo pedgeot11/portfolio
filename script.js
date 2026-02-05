@@ -24,9 +24,23 @@ fetch('https://api.github.com/users/pedgeot11/repos')
       container.appendChild(div);
     });
   });
-function openSection(id) {
-  document.querySelectorAll('.panel').forEach(p => p.style.display = 'none');
-  document.getElementById(id).style.display = 'block';
-  document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+function scrollTo(sectionID) {
+  document.getElementById(sectionID).scrollIntoView({ behavior: 'smooth' });
 }
+
+fetch('https://api.github.com/users/pedgeot11/repos')
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById('github-projects');
+    data.slice(0,6).forEach(repo => {
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <h4>${repo.name}</h4>
+        <p>${repo.description || 'No description'}</p>
+        <a href="${repo.html_url}" target="_blank">View Repo →</a>
+      `;
+      container.appendChild(div);
+    });
+  });
+
 
